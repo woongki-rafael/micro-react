@@ -1,4 +1,4 @@
-import {useGetAllTodosQuery} from "../../query";
+import {useGetAllTodosQuery} from "@dable/query";
 
 const Todo = ({todo}) => {
   return (

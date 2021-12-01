@@ -338,6 +338,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dable/header@workspace:^, @dable/header@workspace:packages/header":
+  version: 0.0.0-use.local
+  resolution: "@dable/header@workspace:packages/header"
+  dependencies:
+    "@vitejs/plugin-react": ^1.1.0
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    vite: ^2.6.14
+  languageName: unknown
+  linkType: soft
+
 "@dable/micro-react@workspace:.":
   version: 0.0.0-use.local
   resolution: "@dable/micro-react@workspace:."
@@ -357,6 +368,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dable/react-app@workspace:packages/react-app"
   dependencies:
+    "@dable/header": "workspace:^"
     "@dable/query": "workspace:^"
     "@dable/todolist": "workspace:^"
     "@vitejs/plugin-react": ^1.1.0

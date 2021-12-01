@@ -1,5 +1,5 @@
 {
-  "name": "@dable/react-app",
+  "name": "@dable/header",
   "private": true,
   "packageManager": "yarn@3.1.1",
   "scripts": {
@@ -8,9 +8,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@dable/header": "workspace:^",
-    "@dable/query": "workspace:^",
-    "@dable/todolist": "workspace:^",
     "@vitejs/plugin-react": "^1.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
