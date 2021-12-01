@@ -1,5 +1,5 @@
-import { queryClient, QueryClientProvider, useGetAllTodosQuery } from "@dable/query";
-import TodoList from "@dable/todolist";
+import { queryClient, QueryClientProvider } from "@dable/query";
+import TodoList from "./TodoList";
 
 function App() {
 

@@ -1,5 +1,5 @@
 {
-  "name": "@dable/react-app",
+  "name": "@dable/todolist",
   "private": true,
   "packageManager": "yarn@3.1.1",
   "scripts": {
@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@dable/query": "workspace:^",
-    "@dable/todolist": "workspace:^",
     "@vitejs/plugin-react": "^1.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

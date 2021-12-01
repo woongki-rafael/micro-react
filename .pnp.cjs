@@ -29,6 +29,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "@dable/react-app",
         "reference": "workspace:packages/react-app"
+      },
+      {
+        "name": "@dable/todolist",
+        "reference": "workspace:packages/todolist"
       }
     ],
     "enableTopLevelFallback": true,
@@ -36,7 +40,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [
       ["@dable/micro-react", ["workspace:."]],
       ["@dable/query", ["workspace:packages/query"]],
-      ["@dable/react-app", ["workspace:packages/react-app"]]
+      ["@dable/react-app", ["workspace:packages/react-app"]],
+      ["@dable/todolist", ["workspace:packages/todolist"]]
     ],
     "fallbackPool": [
     ],
@@ -509,10 +514,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@dable/react-app", "workspace:packages/react-app"],
             ["@dable/query", "workspace:packages/query"],
+            ["@dable/todolist", "workspace:packages/todolist"],
             ["@vitejs/plugin-react", "npm:1.1.0"],
             ["react", "npm:17.0.2"],
-            ["react-dom", "virtual:9673eb1e41583963b9e5ed65596d1167b7913e5922fd8cddf97ad7acf596c9958746cd986b0d932167442d95b8bf8a8e5a1a8268510c7284b61ab8c9284b6d0b#npm:17.0.2"],
-            ["vite", "virtual:9673eb1e41583963b9e5ed65596d1167b7913e5922fd8cddf97ad7acf596c9958746cd986b0d932167442d95b8bf8a8e5a1a8268510c7284b61ab8c9284b6d0b#npm:2.6.14"]
+            ["react-dom", "virtual:4e89b484818a225b6df60d0b587c96f727086f334861f4bdf675b9600a075a7fe905cc602d7a4df7a0d93bb963e95913e475338f7e80e7365299620af5e98fd6#npm:17.0.2"],
+            ["vite", "virtual:4e89b484818a225b6df60d0b587c96f727086f334861f4bdf675b9600a075a7fe905cc602d7a4df7a0d93bb963e95913e475338f7e80e7365299620af5e98fd6#npm:2.6.14"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@dable/todolist", [
+        ["workspace:packages/todolist", {
+          "packageLocation": "./packages/todolist/",
+          "packageDependencies": [
+            ["@dable/todolist", "workspace:packages/todolist"],
+            ["@dable/query", "workspace:packages/query"],
+            ["@vitejs/plugin-react", "npm:1.1.0"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:4e89b484818a225b6df60d0b587c96f727086f334861f4bdf675b9600a075a7fe905cc602d7a4df7a0d93bb963e95913e475338f7e80e7365299620af5e98fd6#npm:17.0.2"],
+            ["vite", "virtual:4e89b484818a225b6df60d0b587c96f727086f334861f4bdf675b9600a075a7fe905cc602d7a4df7a0d93bb963e95913e475338f7e80e7365299620af5e98fd6#npm:2.6.14"]
           ],
           "linkType": "SOFT",
         }]
@@ -1890,10 +1910,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:9673eb1e41583963b9e5ed65596d1167b7913e5922fd8cddf97ad7acf596c9958746cd986b0d932167442d95b8bf8a8e5a1a8268510c7284b61ab8c9284b6d0b#npm:17.0.2", {
-          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-4ede8d1453/0/cache/react-dom-npm-17.0.2-f551215af1-1c1eaa3bca.zip/node_modules/react-dom/",
+        ["virtual:4e89b484818a225b6df60d0b587c96f727086f334861f4bdf675b9600a075a7fe905cc602d7a4df7a0d93bb963e95913e475338f7e80e7365299620af5e98fd6#npm:17.0.2", {
+          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-dbef922acf/0/cache/react-dom-npm-17.0.2-f551215af1-1c1eaa3bca.zip/node_modules/react-dom/",
           "packageDependencies": [
-            ["react-dom", "virtual:9673eb1e41583963b9e5ed65596d1167b7913e5922fd8cddf97ad7acf596c9958746cd986b0d932167442d95b8bf8a8e5a1a8268510c7284b61ab8c9284b6d0b#npm:17.0.2"],
+            ["react-dom", "virtual:4e89b484818a225b6df60d0b587c96f727086f334861f4bdf675b9600a075a7fe905cc602d7a4df7a0d93bb963e95913e475338f7e80e7365299620af5e98fd6#npm:17.0.2"],
             ["@types/react", null],
             ["loose-envify", "npm:1.4.0"],
             ["object-assign", "npm:4.1.1"],
@@ -2264,10 +2284,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:9673eb1e41583963b9e5ed65596d1167b7913e5922fd8cddf97ad7acf596c9958746cd986b0d932167442d95b8bf8a8e5a1a8268510c7284b61ab8c9284b6d0b#npm:2.6.14", {
-          "packageLocation": "./.yarn/__virtual__/vite-virtual-98ea6638ed/0/cache/vite-npm-2.6.14-b92b49e173-4bf2b74077.zip/node_modules/vite/",
+        ["virtual:4e89b484818a225b6df60d0b587c96f727086f334861f4bdf675b9600a075a7fe905cc602d7a4df7a0d93bb963e95913e475338f7e80e7365299620af5e98fd6#npm:2.6.14", {
+          "packageLocation": "./.yarn/__virtual__/vite-virtual-e0771f08bd/0/cache/vite-npm-2.6.14-b92b49e173-4bf2b74077.zip/node_modules/vite/",
           "packageDependencies": [
-            ["vite", "virtual:9673eb1e41583963b9e5ed65596d1167b7913e5922fd8cddf97ad7acf596c9958746cd986b0d932167442d95b8bf8a8e5a1a8268510c7284b61ab8c9284b6d0b#npm:2.6.14"],
+            ["vite", "virtual:4e89b484818a225b6df60d0b587c96f727086f334861f4bdf675b9600a075a7fe905cc602d7a4df7a0d93bb963e95913e475338f7e80e7365299620af5e98fd6#npm:2.6.14"],
             ["@types/less", null],
             ["@types/sass", null],
             ["@types/stylus", null],

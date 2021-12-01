@@ -358,6 +358,19 @@ __metadata:
   resolution: "@dable/react-app@workspace:packages/react-app"
   dependencies:
     "@dable/query": "workspace:^"
+    "@dable/todolist": "workspace:^"
+    "@vitejs/plugin-react": ^1.1.0
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    vite: ^2.6.14
+  languageName: unknown
+  linkType: soft
+
+"@dable/todolist@workspace:^, @dable/todolist@workspace:packages/todolist":
+  version: 0.0.0-use.local
+  resolution: "@dable/todolist@workspace:packages/todolist"
+  dependencies:
+    "@dable/query": "workspace:^"
     "@vitejs/plugin-react": ^1.1.0
     react: ^17.0.2
     react-dom: ^17.0.2
